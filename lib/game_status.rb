@@ -43,4 +43,12 @@ def over?(board)
   won?(board) || draw?(board) || full?(board)
 end
 
-def winner()
+def winner(board)
+  winning_comb = won?(board)
+  index = winning_comb[0]
+  if board[index] == "X"
+    return "X"
+  elsif board[index] == "O"
+    return "O"
+  end
+end
