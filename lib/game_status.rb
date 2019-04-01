@@ -22,6 +22,7 @@ def won? (board)
     index3 = combination[2]
     
     if board[index1] == "X" && board[index2] == "X" && board[index3] == "X"
+      puts combination
       return combination
     else
       return false
