@@ -31,6 +31,6 @@ end
 
 def full?(board)
   board.all? do |value|
-    (value != " ")
+    value != " "
   end
 end
