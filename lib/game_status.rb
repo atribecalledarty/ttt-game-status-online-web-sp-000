@@ -47,12 +47,12 @@ def winner(board)
   winning_comb = won?(board)
   if winning_comb == false
     return nil
-  end
-  index = winning_comb[0]
-
-  if board[index] == "X"
-    return "X"
-  elsif board[index] == "O"
-    return "O"
-  end
+  elsif
+    index = winning_comb[0]
+  
+    if board[index] == "X"
+      return "X"
+    elsif board[index] == "O"
+      return "O"
+    end
 end
