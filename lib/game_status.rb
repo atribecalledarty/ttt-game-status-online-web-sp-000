@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won? (board)
-  WIN_COMBINATIONS.any? do |combination|
+  WIN_COMBINATIONS.each do |combination|
     index1 = combination[0]
     index2 = combination[1]
     index3 = combination[2]
@@ -28,4 +28,6 @@ def won? (board)
     end
     
   end
+  
+  
 end
