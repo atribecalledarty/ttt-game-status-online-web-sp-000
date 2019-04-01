@@ -14,3 +14,14 @@ WIN_COMBINATIONS = [
   [0, 4, 8],
   [2, 4, 6]
 ]
+
+def won? (board)
+  WIN_COMBINATIONS.any? do |combination|
+    index1 = combination[0]
+    index2 = combination[1]
+    index3 = combination[2]
+    
+    board[index1] == "X" && board[index2] == "X" && board[index3] == "X"
+    
+  end
+end
