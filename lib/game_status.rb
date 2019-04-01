@@ -23,11 +23,10 @@ def won? (board)
     
     if (board[index1] == "X" && board[index2] == "X" && board[index3] == "X")
       return combination
-    else
-      return false
     end
     
   end
+  return false
   
   
 end
